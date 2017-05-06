@@ -1,11 +1,18 @@
-baseURL = "http://example.org/"
+baseURL = "https://fasiha.github.io/"
 languageCode = "en-us"
 title = "Insight ≠ Numbers"
 
 [params]
-  subtitle = "A web site by Ahmed Fasih"
+  # subtitle = "A web site by Ahmed Fasih"
   
 [site]
   [author]
     handle = "Ahmed Fasih"
-  
+    stackoverflow = "users/500207"
+    twitter = "gratidue"
+    github = "fasiha"
+    
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1

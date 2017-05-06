@@ -1,6 +1,6 @@
 +++
 date = "2017-05-06T11:10:51-04:00"
-draft = true
+draft = false
 title = "Co-housing"
 
 +++
