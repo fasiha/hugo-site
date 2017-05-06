@@ -1,0 +1,11 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Insight ≠ Numbers"
+
+[params]
+  subtitle = "A web site by Ahmed Fasih"
+  
+[site]
+  [author]
+    handle = "Ahmed Fasih"
+  
