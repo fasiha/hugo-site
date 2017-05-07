@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Insight ≠ Numbers</title>
+    <link>https://fasiha.github.io/hugo-site/</link>
+    <description>Recent content on Insight ≠ Numbers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(not really!) Powered by [Hugo](//gohugo.io) with the [Icarus](https://github.com/digitalcraftsman/hugo-icarus-theme) theme.</copyright>
+    <lastBuildDate>Sat, 06 May 2017 14:29:44 -0400</lastBuildDate>
+    
+	<atom:link href="https://fasiha.github.io/hugo-site/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://fasiha.github.io/hugo-site/about/</link>
+      <pubDate>Sat, 06 May 2017 14:29:44 -0400</pubDate>
+      
+      <guid>https://fasiha.github.io/hugo-site/about/</guid>
+      <description>Welcome to my blog, whose title comes from Professor Richard Hamming’s motto, “The purpose of computation is insight, not numbers” (SIAM).
+After enjoying programming for years, I discovered applied math in mid-undergrad. I decided it would be harder, and therefore more interesting, than “just” software engineering. After years of grad school (ABD in electrical engineering from Ohio State), then working in the lovely D.C. metro area, I revised my views and came back to Ohio as a full-stack developer who just happens to know a lot about signal processing, machine learning, and scientific computing.</description>
+    </item>
+    
+    <item>
+      <title>Co-housing</title>
+      <link>https://fasiha.github.io/hugo-site/2017/05/06/co-housing/</link>
+      <pubDate>Sat, 06 May 2017 11:10:51 -0400</pubDate>
+      
+      <guid>https://fasiha.github.io/hugo-site/2017/05/06/co-housing/</guid>
+      <description>Roko Belic’s 2011 film Happy has a great bit about co-housing.
+(Banner image credit: US National Park Service.)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Insight ≠ Numbers</title>
+    <link>https://fasiha.github.io/hugo-site/tags/</link>
+    <description>Recent content in Tags on Insight ≠ Numbers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(not really!) Powered by [Hugo](//gohugo.io) with the [Icarus](https://github.com/digitalcraftsman/hugo-icarus-theme) theme.</copyright>
+    <lastBuildDate>Sat, 06 May 2017 11:10:51 -0400</lastBuildDate>
+    
+	<atom:link href="https://fasiha.github.io/hugo-site/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Modernity</title>
+      <link>https://fasiha.github.io/hugo-site/tags/modernity/</link>
+      <pubDate>Sat, 06 May 2017 11:10:51 -0400</pubDate>
+      
+      <guid>https://fasiha.github.io/hugo-site/tags/modernity/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

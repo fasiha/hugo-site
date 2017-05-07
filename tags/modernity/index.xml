@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modernity on Insight ≠ Numbers</title>
+    <link>https://fasiha.github.io/hugo-site/tags/modernity/</link>
+    <description>Recent content in Modernity on Insight ≠ Numbers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(not really!) Powered by [Hugo](//gohugo.io) with the [Icarus](https://github.com/digitalcraftsman/hugo-icarus-theme) theme.</copyright>
+    <lastBuildDate>Sat, 06 May 2017 11:10:51 -0400</lastBuildDate>
+    
+	<atom:link href="https://fasiha.github.io/hugo-site/tags/modernity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Co-housing</title>
+      <link>https://fasiha.github.io/hugo-site/2017/05/06/co-housing/</link>
+      <pubDate>Sat, 06 May 2017 11:10:51 -0400</pubDate>
+      
+      <guid>https://fasiha.github.io/hugo-site/2017/05/06/co-housing/</guid>
+      <description>Roko Belic’s 2011 film Happy has a great bit about co-housing.
+(Banner image credit: US National Park Service.)</description>
+    </item>
+    
+  </channel>
+</rss>
