@@ -15,7 +15,7 @@ Which brings up one of the most fascinating aspects of this co-house: shared mea
 
 ![Co-dinner, in *Happy*](co-housing.jpg)
 
-Even my single or childless friends would agree that it sounds quite pleasant, even after incorporating all potential downsides that one’s grownup mind raises.
+Even my single or childless friends would agree that it sounds quite pleasant, even after incorporating all potential downsides that one’s grownup mind raises. Two families in the last two days have told me how they don’t really cook—I can’t blame them. It’s a huge burden on one’s time and energy budget, and doing it takes serious commitment because outsourcing health to corporations is bad for your bank account and for your health. Co-housing serves as a complement to other ways to meet the time/energy/money budget, through a holistic rethinking of how dwellings work and how people live. It could greatly reduce the costs of cooking, and even growing one’s own food.
 
 ---
 
