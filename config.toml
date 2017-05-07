@@ -1,18 +1,73 @@
-baseURL = "https://fasiha.github.io/"
+baseurl = "https://fasiha.github.io"
 languageCode = "en-us"
 title = "Insight ≠ Numbers"
+paginate = 10
+footnotereturnlinkcontents = "↩"
+theme = "theme"
+
+
+[permalinks]
+    post = "/:year/:month/:day/:slug"
+
 
 [params]
-  # subtitle = "A web site by Ahmed Fasih"
-  
-[site]
-  [author]
-    handle = "Ahmed Fasih"
-    stackoverflow = "users/500207"
-    twitter = "gratidue"
-    github = "fasiha"
+    # Tell me who you are
+    author = "Ahmed Fasih"
+    bio = "Code – Math – Food – Family"
+    location = "Dayton, Ohio, USA"
+    site_description = ""
+    copyright  = "(not really!) Powered by [Hugo](//gohugo.io) with the [Icarus](https://github.com/digitalcraftsman/hugo-icarus-theme) theme."
+    logo = "/images/monogram.svg"
+    avatar = "/images/fam-stache.png"
+    # logo = "css/images/logo.png"
+    disable_mathjax = true # set to true to disable MathJax
+
+    # Format dates with Go's time formatting
+    date_format = "2006 Jan 02"
+
+    # Add custom assets with their paths relative to the static folder
+	custom_css = []
+	custom_js  = []
+
+# Create custom menu entries by defining a label and a link for
+# them. Since you can also link posts, you've the option the
+# place the links before or after them.
+#
+# E.g.: "Home" appears before all linked posts in the menu
+# and "Tags" / "Categories" after them.
+[[params.menu]]
+    before = true
+    label  = "Home"
+    link   = "/"
     
-[[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 1
+[[params.menu]]
+    before = false
+    label  = "About"
+    link   = "about/"
+
+[[params.menu]]
+    before = false
+    label  = "(Tags)"
+    link   = "tags/"
+
+[[params.menu]]
+    before = false
+    label  = "(Categories)"
+    link   = "categories/"
+
+# Enter a link for the follow button on the left
+[params.profile]
+    follow_button = "https://twitter.com/gratidue"
+
+
+[social]
+    github          = "fasiha"
+    stackoverflow   = "500207"
+    twitter         = "gratidue"
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    recent_articles = true
+    categories = true
+    tags = true
+    tag_cloud = true
