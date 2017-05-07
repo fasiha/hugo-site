@@ -7,7 +7,7 @@ theme = "theme"
 
 
 [permalinks]
-    post = "/:year/:month/:day/:slug"
+    post = "/:slug"
 
 
 [params]
