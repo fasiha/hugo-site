@@ -1,4 +1,4 @@
-baseurl = "https://fasiha.github.io"
+baseurl = "https://fasiha.github.io/hugo-site"
 languageCode = "en-us"
 title = "Insight ≠ Numbers"
 paginate = 10
@@ -17,8 +17,8 @@ theme = "theme"
     location = "Dayton, Ohio, USA"
     site_description = ""
     copyright  = "(not really!) Powered by [Hugo](//gohugo.io) with the [Icarus](https://github.com/digitalcraftsman/hugo-icarus-theme) theme."
-    logo = "/images/monogram.svg"
-    avatar = "/images/fam-stache.png"
+    logo = "images/monogram.svg"
+    avatar = "images/fam-stache.png"
     # logo = "css/images/logo.png"
     disable_mathjax = true # set to true to disable MathJax
 
