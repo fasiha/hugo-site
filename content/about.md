@@ -14,6 +14,6 @@ I sling JavaScript, Clojure/Script, Elm, Python, Matlab, and C for fun and profi
 
 I have a wonderful family. Here we are in disguise, circa mid-2015—Emily as Poirot, Alistair as Joseph Steel, Basile as Charlie Chaplain, and Ahmed (me) as Dalí:
 
-![Incognito](images/fam-stache.jpg)
+![Incognito](../images/fam-stache.jpg)
 
 (Banner image credit: self, at Glen Helen Nature Preserve, Yellow Springs, Ohio, USA.)
