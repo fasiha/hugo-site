@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Insight ≠ Numbers</title>
-    <link>https://fasiha.github.io/hugo-site/post/</link>
-    <description>Recent content in Posts on Insight ≠ Numbers</description>
+    <title>Study on Insight ≠ Numbers</title>
+    <link>https://fasiha.github.io/hugo-site/tags/study/</link>
+    <description>Recent content in Study on Insight ≠ Numbers</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(not really!) Powered by [Hugo](//gohugo.io) with the [Icarus](https://github.com/digitalcraftsman/hugo-icarus-theme) theme.</copyright>
     <lastBuildDate>Sun, 21 May 2017 09:33:34 -0400</lastBuildDate>
     
-	<atom:link href="https://fasiha.github.io/hugo-site/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fasiha.github.io/hugo-site/tags/study/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,15 +21,6 @@
       <description>A handbook of common Japanese phrases A handbook of common Japanese phrases, compiled by Sanseido, translated and adapted by John Brennan. OhioLink record
 John Brennan’s translation for Japanese learners of publishing house Sanseido’s book of language etiquette originally intended for Japanese native speakers has many common set phrases (highly developed and sometimes lengthy collocations) for
  congratulations, condolences, making speeches, giving gifts, addressing people (eleven set phrases for “Have you got a moment?</description>
-    </item>
-    
-    <item>
-      <title>Co-housing</title>
-      <link>https://fasiha.github.io/hugo-site/co-housing/</link>
-      <pubDate>Sat, 06 May 2017 11:10:51 -0400</pubDate>
-      
-      <guid>https://fasiha.github.io/hugo-site/co-housing/</guid>
-      <description>Roko Belic’s 2011 documentary film Happy (Hoopla) had many memorable situations but the one I keep returning to is co-housing. Around the 39th minute, the film discusses the system in Denmark, where where several families live on a plot of land or a single building even, where specific duties, amenities, and projects are shared by all co-housers. The film explains the system through a case study of a single mother who describes the Jernstobereit co-house as the “miracle” she was looking for.</description>
     </item>
     
   </channel>
