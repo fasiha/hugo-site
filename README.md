@@ -2,6 +2,7 @@ First clone this repo and switch to the `raw` branch:
 ```
 $ git clone https://PATH/TO/blog blog
 $ git fetch --all
+$ git checkout gh-pages
 $ git checkout raw
 ```
 
@@ -26,4 +27,5 @@ Then to build,
 $ hugo --theme=icarus && cp -pr public/* ../dist/
 ```
 
-Commit both directories (`blog/`’s `raw` branch and `dist/`’s `gh-pages` branch).
+Commit both directories (`blog/`’s `raw` branch and `dist/`’s `gh-pages` branch), then `git push --all`.
+
