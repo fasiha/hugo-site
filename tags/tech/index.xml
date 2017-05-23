@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on Insight ≠ Numbers</title>
+    <link>https://fasiha.github.io/hugo-site/tags/tech/</link>
+    <description>Recent content in Tech on Insight ≠ Numbers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(not really!) Powered by [Hugo](//gohugo.io) with the [Icarus](https://github.com/digitalcraftsman/hugo-icarus-theme) theme.</copyright>
+    <lastBuildDate>Fri, 28 Apr 2017 04:48:19 -0400</lastBuildDate>
+    
+	<atom:link href="https://fasiha.github.io/hugo-site/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Announcing: Ebisu and Ebisu.js</title>
+      <link>https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/</link>
+      <pubDate>Fri, 28 Apr 2017 04:48:19 -0400</pubDate>
+      
+      <guid>https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/</guid>
+      <description>I am very pleased to announce the release of Ebisu and Ebisu.js!
+These are are public-domain software libraries intended to be used by quiz or flashcard apps for intelligent, Bayesian quiz scheduling. They are released under the completely free Unlicense, and can be used anywhere by anyone without any conditions 🎆. The underlying algorithm is based on a principled application of Bayesian statistics, and has many nice features compared to existing scheduling algorithms 😁.</description>
+    </item>
+    
+  </channel>
+</rss>

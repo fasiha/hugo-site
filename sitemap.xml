@@ -17,6 +17,11 @@
   </url>
   
   <url>
+    <loc>https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/</loc>
+    <lastmod>2017-04-28T04:48:19-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fasiha.github.io/hugo-site/categories/</loc>
     <priority>0</priority>
   </url>
@@ -48,6 +53,12 @@
   <url>
     <loc>https://fasiha.github.io/hugo-site/tags/</loc>
     <lastmod>2017-05-06T11:10:51-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fasiha.github.io/hugo-site/tags/tech/</loc>
+    <lastmod>2017-04-28T04:48:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   

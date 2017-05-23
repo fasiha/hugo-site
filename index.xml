@@ -42,5 +42,15 @@ After enjoying programming for years, I discovered applied math in mid-undergrad
       <description>Roko Belic’s 2011 documentary film Happy (Hoopla) had many memorable situations but the one I keep returning to is co-housing. Around the 39th minute, the film discusses the system in Denmark, where where several families live on a plot of land or a single building even, where specific duties, amenities, and projects are shared by all co-housers. The film explains the system through a case study of a single mother who describes the Jernstobereit co-house as the “miracle” she was looking for.</description>
     </item>
     
+    <item>
+      <title>Announcing: Ebisu and Ebisu.js</title>
+      <link>https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/</link>
+      <pubDate>Fri, 28 Apr 2017 04:48:19 -0400</pubDate>
+      
+      <guid>https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/</guid>
+      <description>I am very pleased to announce the release of Ebisu and Ebisu.js!
+These are are public-domain software libraries intended to be used by quiz or flashcard apps for intelligent, Bayesian quiz scheduling. They are released under the completely free Unlicense, and can be used anywhere by anyone without any conditions 🎆. The underlying algorithm is based on a principled application of Bayesian statistics, and has many nice features compared to existing scheduling algorithms 😁.</description>
+    </item>
+    
   </channel>
 </rss>
