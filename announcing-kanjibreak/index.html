@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Announcing: KanjiBreak &middot; Insight ≠ Numbers</title>
+    <meta name="generator" content="Hugo 0.20.7" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Ahmed Fasih">
+    
+      <meta name="description" content="">
+    
+    
+    <link rel="canonical" href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/"/>
+    <link rel="icon" href="https://fasiha.github.io/hugo-site/favicon.ico">
+    <link rel="apple-touch-icon" href="https://fasiha.github.io/hugo-site/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://fasiha.github.io/hugo-site/css/style.css">
+    <link rel="stylesheet" href="https://fasiha.github.io/hugo-site/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fasiha.github.io/hugo-site/css/monokai.css">
+    <link rel="stylesheet" href="https://fasiha.github.io/hugo-site/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Announcing: KanjiBreak" />
+<meta property="og:description" content="I am very pleased to announce a web app I’ve been working on: KanjiBreak!
+It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., kanji break-downs 😉. If you’re familiar with Sino-Japanese writing, you know that a character like 場ba (“place/area”) is made up of
+ 土 (“ground”) on the left, then 日 (“sun” or “day”) on the top-right, below which we find 一 (“one”, the number) on top of 勿." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" />
+
+
+
+<meta property="article:published_time" content="2017-02-21T01:03:22-05:00"/>
+<meta property="article:modified_time" content="2017-02-21T01:03:22-05:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="Announcing: KanjiBreak">
+<meta itemprop="description" content="I am very pleased to announce a web app I’ve been working on: KanjiBreak!
+It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., kanji break-downs 😉. If you’re familiar with Sino-Japanese writing, you know that a character like 場ba (“place/area”) is made up of
+ 土 (“ground”) on the left, then 日 (“sun” or “day”) on the top-right, below which we find 一 (“one”, the number) on top of 勿.">
+
+
+<meta itemprop="dateModified" content="2017-02-21T01:03:22-05:00" />
+<meta itemprop="wordCount" content="2293">
+
+
+
+<meta itemprop="keywords" content="modernity,study,tech," />
+
+    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content="Announcing: KanjiBreak"/>
+<meta name="twitter:title" content="Announcing: KanjiBreak"/>
+<meta name="twitter:description" content="I am very pleased to announce a web app I’ve been working on: KanjiBreak!
+It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., kanji break-downs 😉. If you’re familiar with Sino-Japanese writing, you know that a character like 場ba (“place/area”) is made up of
+ 土 (“ground”) on the left, then 日 (“sun” or “day”) on the top-right, below which we find 一 (“one”, the number) on top of 勿."/>
+<meta name="twitter:site" content="@gratidue"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://fasiha.github.io/hugo-site" id="logo">
+          
+          <i class="logo" style="background-image: url('https://fasiha.github.io/hugo-site/images/monogram.svg')"></i>
+          
+          <span class="site-title">Insight ≠ Numbers</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://fasiha.github.io/">Home</a>
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://fasiha.github.io/hugo-site/about/">About</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://fasiha.github.io/hugo-site/tags/">(Tags)</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://fasiha.github.io/hugo-site/categories/">(Categories)</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://fasiha.github.io/hugo-site/images/fam-stache.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://fasiha.github.io/hugo-site" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://fasiha.github.io/">Home</a></td>
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://fasiha.github.io/hugo-site/about/">About</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://fasiha.github.io/hugo-site/tags/">(Tags)</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://fasiha.github.io/hugo-site/categories/">(Categories)</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://fasiha.github.io/hugo-site" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   		
+	    <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="https://fasiha.github.io/hugo-site/images/fam-stache.png">
+      <h2 id="name">Ahmed Fasih</h2>
+      <h3 id="title">Code – Math – Food – Family</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Dayton, Ohio, USA</span>
+      
+          <a id="follow" href="https://twitter.com/gratidue">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        4
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          3
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/fasiha" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//stackoverflow.com/users/500207" target="_blank" title="Stack Overflow"><i class="fa fa-stack-overflow"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/gratidue" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="https://fasiha.github.io/hugo-site/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+	    
+
+	    
+<section id="main">
+
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+        <div class="article-inner">
+            
+                <img src="https://fasiha.github.io/hugo-site/announcing-kanjibreak/banner.png" class="article-banner">
+            
+
+            <header class="article-header">
+    <a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/">
+    <h1 class="article-title" itemprop="name">
+        Announcing: KanjiBreak
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2017-02-21 01:03:22 -0500 EST" itemprop="datePublished">2017 Feb 21</time>
+            &middot;
+            2293
+            words
+            &middot;
+            11
+            minute read
+        </div>
+        
+        
+            
+            
+        
+
+        
+            
+            
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                
+
+<p>I am very pleased to announce a web app I’ve been working on: <strong><a href="https://kanji.aldebrn.me">KanjiBreak</a></strong>!</p>
+
+<p>It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., <em>kanji break</em>-downs 😉. If you’re familiar with Sino-Japanese writing, you know that a character like <ruby>場<rt>ba</rt></ruby> (<a href="http://jisho.org/search/場">“place/area”</a>) is made up of</p>
+
+<ul>
+<li>土 (“ground”) on the left, then</li>
+<li>日 (“sun” or “day”) on the top-right, below which we find</li>
+<li>一 (“one”, the number) on top of</li>
+<li>勿.</li>
+</ul>
+
+<p>There are some two thousand kanji that the Japanese Ministry of Education requires students to know in order to graduate from high school (<ruby>常用<rt>jōyō</rt></ruby> <ruby>漢字<rt>kanji</rt></ruby>, where 常 means “common” and 用 “use”), and another nine hundred kanji permitted to be used in personal names (<ruby>人名用<rt>jinmeiyō</rt></ruby> <ruby>漢字<rt>kanji</rt></ruby>, where 人 means “person” and 名 “name”, found in the original title of Makoto Shinkai’s most recent opus, <em>Your Name</em>: 君の名は, though the 名 here isn’t pronounced “mei”, but rather “na”).</p>
+
+<p>With so many kanji, many have compiled databases of kanji breakdowns. Students of Japanese may be familiar with Andreas Foerster and Naoko Tamura’s <em>Kanji ABC</em>, James Heisig’s <em>Remembering the Kanji</em>, <a href="http://kanjidamage.com">KanjiDamage</a>, etc., designed to aid memorization of kanji. CJK data processing people might be familiar with <a href="http://glyphwiki.org">GlyphWiki</a>, <a href="http://www.kanjicafe.com/kradfile_license.htm">Kradfile-u</a>, <a href="http://kanjivg.tagaini.net/">KanjiVG</a>, <a href="https://github.com/Pomax/node-kanji-relations/blob/master/index.js">Pomax’s Indigo database</a> (<a href="https://web.archive.org/web/20140712181412/http://pomax.nihongoresources.com/index.php?entry=1225052300">blog post</a>), <a href="https://github.com/amake/cjk-decomp">Gavin Grover’s database</a>, <a href="http://tsukurimashou.osdn.jp/idsgrep.php.en">IDSgrep</a>, etc., which are helpful in font design or other analysis.</p>
+
+<h2 id="kanjibreak-goals">KanjiBreak goals</h2>
+
+<p>KanjiBreak aims to help people compile their own databases of kanji breakdown. Well. <em>Really</em> it’s a way for me to crowdsource the creation of <em>The Ultimate Kanji Breakdown Database For Japanese Students</em> but really, no single database will please everyone and so KanjiBreak shows you all breakdowns suggested for a given kanji—ranked by how popular that breakdown is—and you can either pick one of them as your favorite or create a new one. It is expected to be used by teachers and students and is aimed at collaboration.</p>
+
+<p>To this end, visitors can download the entire database of breakdowns—all breakdowns for all kanji suggested by everyone—as a spreadsheet file or a SQLite database. A <a href="https://datproject.org">Dat</a> feed of the data is also maintained! If you use <a href="https://beakerbrowser.com">Beaker Browser</a> or Dat Desktop, please consider seeding dat://0d10fc7a0f4e54033f4787589ccf75e5746a89bad20f355f9f6d7b28804b3200, and spread the breakdown love with the full power of decentralized peer-to-peer sharing.</p>
+
+<p>Although data sharing is a primary goal of the project, so is privacy. KanjiBreak needs to know which decompositions <em>you</em> submit, so it needs to be able to differentiate you from other users of the site, but it <em>does not want to know who you are</em>. Therefore, when you log in, using a service called Auth0, KanjiBreak immediately hashes your unique login name with the PBKDF2 key derivation function to get a meaningless string of letters and numbers that unqiuely identifies you (see the <a href="https://github.com/fasiha/kanji-abecedario/blob/ca43c3023d3a587ae3962713989fc5ff09399ef7/hashuser.js">source code that does that</a> and <a href="https://github.com/fasiha/kanji-abecedario/blob/ca43c3023d3a587ae3962713989fc5ff09399ef7/app.js#L64-L71">it’s caller</a> 🤓), and it associates <em>that</em> with your contributions. This ensures that, in some dystopian future where Sino-Japanese characters are banned, the fascists will only know that “a9cb140e…” is a kanji scholar, not you. (I just made up that hash.)</p>
+
+<p>Unfortunately, this also means you can’t have friends on KanjiBreak—we only know you as “a9cb140e…” and can’t share your decompositions with your friend “6da3a290…” (also made up), since we don’t know who you two are.</p>
+
+<p>(You <em>do</em> know how the system identifies you—if you’re logged in and download the decompositions database, your hash, “a9cb140e…” above, will be either in the filename and/or inside the file you downloaded. After you and your friend identify and exchange your hashes, you can locate each other’s contributions. For the strictest privacy, KanjiBreak has no mechanism to do that live on the website.)</p>
+
+<h2 id="notes-on-breakdowns">Notes on breakdowns</h2>
+
+<p>Now for some notes on how the decompositions themselves work, as far as KanjiBreak is concerned.</p>
+
+<p>Most importantly, KanjiBreak only cares about decomposition, <em>not</em> placement. It doesn’t use Unicode’s ideographic description characters (⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻) to specify the spatial relationship between components. <strong>Sorry</strong>. Decomposition is a lot of work, placement is that much more work.</p>
+
+<p>Next. KanjiBreak has so far taken a flexible stand on what characters are allowed to be used in decompositions, i.e., the allowed list of “primitives” or “radicals”. Of course all three thousand general-purpose and name kanji (jōyō and jinmeiyō) are permitted inside decompositions. But also permitted are roughly five hundred components that we adapted from Andreas Foerster and Naoko Tamura’s <em>Kanji ABC</em>. These five hundred components contain</p>
+
+<ul>
+<li>mostly jōyō and jinmeiyō kanji, as well as</li>
+<li>several non-standard kanji, i.e., available in Unicode and often used around the Sinic world, but not on any official Japanese list, e.g., 昜 or 帚;</li>
+<li>most traditional radicals, i.e., primitives that have been officially used in the Sinic world to break down kanji and coded by Unicode, e.g., most of the Kangxi radicals are here: 犭 or 扌;</li>
+<li>some non-traditional “radicals” that for various reasons are encoded by Unicode and widely supported by modern fonts, e.g., 丷 or 丆;</li>
+<li>and about forty-five completely-invented primitives, i.e., groups of strokes that Foerster and Tamura have identified as useful for kanji learners to memorize but are completely unofficial and unsupported by Unicode. Included in this set are two invented by me…</li>
+</ul>
+
+<p>I think everyone can agree that while invented “primitives” from the last two groups are very useful for kanji learners, they should be kept to a minimum—especially since many are not supported by Unicode or fonts and therefore must be represented clumsily with SVG images and the like. I’ve added just eight characters with Unicode/font support and two without, to Foerster &amp; Tamura’s list of primitives, and am open to adding more if the community requests it, especially if multiple jōyō and jinmeiyō kanji can be linked with the invented primitive.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>The user interface for the app, currently at <a href="https://kanji.aldebrn.me/">https://kanji.aldebrn.me/</a>, is definitely confusing at first, and I intend to make a video of me decomposing a few characters to convey a sense of the workflow. In a nutshell, though, when you first visit <a href="https://kanji.aldebrn.me/">https://kanji.aldebrn.me/</a>, you’ll see this:</p>
+
+<p><img src="screencap.png" alt="KanjiBreak initial screen" /></p>
+
+<ol>
+<li>You’re presented with the first kanji that doesn’t yet have a breakdown, above, 地, which means helpful volunteers have submitted at least one decomposition for 531 kanji and primitives—thank you!</li>
+<li>You can go to the previous and next kanji using the buttons at the top. The previous kanji, #531, our friend 場, will have at least one decomposition, and KanjiBreak shows it to you under “Existing choices”, and invites you to “Accept” this as your own.</li>
+<li>If you click “Accept” or “Login” or any of the primitives in blue boxes, you’re asked to log in. Currently we use Auth0 for GitHub and Twitter sign-ons.</li>
+<li>For any kanji or primitive, you can select <em>primitive</em> components by clicking the blue boxes. As you do so, they appear under “Your breakdown”.</li>
+<li>You can add a <em>kanji</em> component by entering it at “Type kanji to add to breakdown”.</li>
+<li>Click “Submit”, under “Your breakdown” to add your favorite decomposition. It will appear under “Existing choices” with a ✅.</li>
+<li>Feel free to edit your decomposition.</li>
+<li>Or to go on to the next kanji needing a breakdown. Or any kanji or primitive, a comprehensive list of all available jōyō and jinmeiyō kanji is provided underneath the primitives palette.</li>
+<li>Familiarize yourself with the organization of these primitives, derived from Foerster &amp; Tamura’s <em>Kanji ABC</em>. Also described above, there are currently 469 primitives (maybe more when you read this). They are grouped into thirty-two sets, which are called
+
+<ul>
+<li>“LE” for primitives found on the <em>left</em> of kanji,</li>
+<li>“RI”, meaning <em>right</em>,</li>
+<li>“TO”, <em>top</em>,</li>
+<li>“BO”, <em>bottom</em>,</li>
+<li>“EN”, <em>enclosing</em> primitives like 广 or ⻌,</li>
+<li>“FR”, <em>fragmentary</em> primitives like 丷, and finally</li>
+<li>twenty-six more groups, from “A” to “Z”—most groups contain related kanji (except “Z” which is a zoo).</li>
+</ul></li>
+<li>As you get familiar with where primitives are located, your breakdown speed will increase.</li>
+<li>Sometimes though, it’s easier to select a primitive by searching for a kanji that contains it and that you can swiftly produce with your keyboard IME or handwriting recognition. For this we have the “Search” box. Entering a kanji (or a primitive if it exists in Unicode) into the search box will display that query’s decomposition (if any) as well as any kanji for which someone used the query as a component; this search goes up and down the tree.</li>
+</ol>
+
+<h2 id="programming-notes">Programming notes</h2>
+
+<p>I am very excited to release this project because it is my first project in <a href="http://elm-lang.org">Elm</a>, a statically-typed Haskell-derivative that compiles to JavaScript and designed from the ground up for browser apps. My previous browser front-ends were in plain JavaScript or ClojureScript. In a nutshell, I love Elm. And for the first time, I felt loved by a programming language—in the sense that, the gestalt of the libraries’ designs, format-on-save, the famously user-friendly error messages next to the offending underlined line, and the protection of static types, all worked to help and protect me. I’m writing this blog post a few months after finishing the app (though it is dated to just after the last major commit), but I am confident that I can go back and make changes to it easily, which is not the case for even my ClojureScript app (let alone my JavaScript apps).</p>
+
+<p>The only drawbacks to Elm were minor for me but will probably hurt for a few. I think the phrase “boilerplate” refers to the sequence of 2–3 steps you have to do each time you add a new event handler—after you finish the view and add the handler, you might extend the model type, then extend the message type; if you need to make a network request, add the JSON decoder, and add the response handler, which means repeating the steps again. This is a little tiring but I can tolerate this foible. The Elm Architecture was familiar to me through my experience with the <code>re-frame</code> ClojureScript front-end library, and is closely related to the Redux model. Despite the detailed tutorials and examples produced by the Elm community, learning this architecture is likely to be one of the weirder dances a programmer has to learn, which is a fixed, up-front cost to entry.</p>
+
+<p>The server backend part of the web app (i.e., the piece that runs on the computer I rent from a data center in New York) is in plain JavaScript and runs on Node.js. It is needed to store the data compiled by all its users, which is kept in a SQLite database. Going from Elm to JavaScript and back emphasized to me how comfortable and reliable Elm was, and how brittle JavaScript was. I would like to port the backend to PureScript, or to Elm whenever Elm comes to the backend (though apparently it will likely not be to Node.js).</p>
+
+<p>It was fun to get back to writing SQL—though this app is by all accounts fairly small, it used some advanced SQL features. Aficionados can critique my <a href="https://github.com/fasiha/kanji-abecedario/blob/118ed2d39f0388688f78293bd6a820e864bb3086/db.js#L215-L240">longest SQL command</a>, which searches for all decompositions that use a given primitive (both up and down through its ancestors and its descendants). All 3200-odd “characters” (roughly three thousand kanji being decomposed plus roughly two hundred non-kanji primitives) are nodes in a cyclic directed graph, with decompositions as edges, and as mentioned above, it’s often useful to find the sub-graph of all nodes that indirectly touch a search target. This search is also the piece I’m most worried about breaking as the database grows—you can imagine searching for 一 (one) and getting thousands of decompositions…</p>
+
+<h2 id="fine-technical-details">Fine technical details</h2>
+
+<p>If you’ve used the site a little, you’ve seen that I display a big box of primitives that serve as a palette, or a box of types (as in, lead type, printing presses, etc.). These are rendered as SVG, for aesthetic uniformity but also because a handful of primitives aren’t available in Unicode.</p>
+
+<p>Life outside Unicode is a little rough—think <em>Little House on the Prairie</em>, or *Firefly*’s “savage outer planets” (so awesome). Andrew West’s <a href="http://www.babelstone.co.uk/Fonts/PUA.html">BabelStone Han PUA Font</a> is a monumental achievement: he maintains a database and font containing several thousand non-standard characters that are nonetheless useful for various reasons. He was kind enough to add several for me as I went through Foerster &amp; Tamura’s set of primitives in <em>Kanji ABC</em>! These characters live in the <a href="https://en.wikipedia.org/wiki/Private_Use_Areas">private use area</a> (PUA) of Unicode, the hundred-thousand or so codepoints promised to be left unspecified. Software encountering a PUA character can render it if any font claiming to support that codepoint is available, so one option could have been to use the BabelStone PUA webfont on KanjiBreak.</p>
+
+<p>I chose to go SVG, from the great <a href="http://kanjivg.tagaini.net">KanjiVG</a> project, mainly for one silly reason: I don’t like the pointy serifs in the BabelStone Han PUA 🙃. I also expect to (slowly) add the number of primitives, and am considering allowing users to create their own primitives (though KanjiBreak would not show these to others to ensure interoperability).</p>
+
+<p>Because of this decision, I had to carve a hundred SVGs for primitives that either weren’t in KanjiVG or weren’t even in Unicode. When I started this process, I didn’t know if it was doable so the code to do this is <a href="https://github.com/fasiha/kanji-abecedario/blob/gh-pages/index.js">utter 💩</a>. For each primitive not in KanjiVG, I identified a kanji that <em>was</em> in KanjiVG, identified the stroke numbers that represented the primitive I was after, and tabulated it all into a few tab-separated-value TSV files.</p>
+
+<p>Maybe I should switch to the Han PUA font… 😅.</p>
+
+<hr />
+
+<p>To summarize, I learned a lot from this project. Starting with the fact that kanji are pretty complicated—today we have computers and they actually constrain (but <a href="http://languagelog.ldc.upenn.edu/nll/?p=17913">not stop</a>) the creation of new kanji, which happened much more freely in the age of brush and ink. So kanji are very rich in quirks, which to me is nearly intoxicating.</p>
+
+<p>But also I enjoyed playing with Dat, SQL, and most of all, Elm. I hope you enjoy using the website, please get in touch!</p>
+
+            </div>
+            <footer class="article-footer">
+    <a data-url="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" data-id="643f2ca09cd3f31f212167fc3ecf731c" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+        </div>
+
+        
+<nav id="article-nav">
+    
+
+    
+    <a href="https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">Announcing: Ebisu and Ebisu.js</div>
+    </a>
+    
+</nav>
+
+
+    </article>
+
+    
+</section>
+
+
+	    
+	    <aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/japanese-study-books/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/japanese-study-books/" class="title">Japanese study books</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-21 09:33:34 -0400 EDT" itemprop="datePublished">2017 May 21</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/co-housing/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/images/Wagons-on-trail-R1_3.jpg)" alt="Announcing: KanjiBreak" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/co-housing/" class="title">Co-housing</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-06 11:10:51 -0400 EDT" itemprop="datePublished">2017 May 06</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/ebisu/math.jpg)" alt="Announcing: KanjiBreak" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/" class="title">Announcing: Ebisu and Ebisu.js</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-04-28 04:48:19 -0400 EDT" itemprop="datePublished">2017 Apr 28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/announcing-kanjibreak/banner.png)" alt="Announcing: KanjiBreak" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" class="title">Announcing: KanjiBreak</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-02-21 01:03:22 -0500 EST" itemprop="datePublished">2017 Feb 21</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fasiha.github.io/hugo-site/tags/modernity">
+                    modernity
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fasiha.github.io/hugo-site/tags/study">
+                    study
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fasiha.github.io/hugo-site/tags/tech">
+                    tech
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://fasiha.github.io/hugo-site/tags/modernity" style="font-size: 12px;">modernity</a>
+        
+        
+        <a href="https://fasiha.github.io/hugo-site/tags/study" style="font-size: 12px;">study</a>
+        
+        
+        <a href="https://fasiha.github.io/hugo-site/tags/tech" style="font-size: 12px;">tech</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+	    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017
+      (not really!) Powered by <a href="//gohugo.io">Hugo</a> with the <a href="https://github.com/digitalcraftsman/hugo-icarus-theme">Icarus</a> theme.
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://fasiha.github.io/hugo-site/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://fasiha.github.io/hugo-site/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+</body>
+</html>

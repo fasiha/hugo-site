@@ -52,5 +52,16 @@ After enjoying programming for years, I discovered applied math in mid-undergrad
 These are are public-domain software libraries intended to be used by quiz or flashcard apps for intelligent, Bayesian quiz scheduling. They are released under the completely free Unlicense, and can be used anywhere by anyone without any conditions 🎆. The underlying algorithm is based on a principled application of Bayesian statistics, and has many nice features compared to existing scheduling algorithms 😁.</description>
     </item>
     
+    <item>
+      <title>Announcing: KanjiBreak</title>
+      <link>https://fasiha.github.io/hugo-site/announcing-kanjibreak/</link>
+      <pubDate>Tue, 21 Feb 2017 01:03:22 -0500</pubDate>
+      
+      <guid>https://fasiha.github.io/hugo-site/announcing-kanjibreak/</guid>
+      <description>I am very pleased to announce a web app I’ve been working on: KanjiBreak!
+It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., kanji break-downs 😉. If you’re familiar with Sino-Japanese writing, you know that a character like 場ba (“place/area”) is made up of
+ 土 (“ground”) on the left, then 日 (“sun” or “day”) on the top-right, below which we find 一 (“one”, the number) on top of 勿.</description>
+    </item>
+    
   </channel>
 </rss>

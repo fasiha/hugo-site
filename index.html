@@ -177,7 +177,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        3
+        4
         <span>Posts</span>
       </div>
       <div class="article-info-block">
@@ -665,6 +665,135 @@ These are are public-domain software libraries intended to be used by quiz or fl
         </div>
     </article>
     
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+        <div class="article-inner">
+            
+            <a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" itemprop="url">
+                <img src="https://fasiha.github.io/hugo-site/announcing-kanjibreak/banner.png" class="article-banner">
+            
+            </a>
+
+            <header class="article-header">
+    <a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/">
+    <h1 class="article-title" itemprop="name">
+        Announcing: KanjiBreak
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2017-02-21 01:03:22 -0500 EST" itemprop="datePublished">2017 Feb 21</time>
+            &middot;
+            2293
+            words
+            &middot;
+            11
+            minute read
+        </div>
+        
+        
+            
+            
+        
+
+        
+            
+            
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    I am very pleased to announce a web app I’ve been working on: KanjiBreak!
+It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., kanji break-downs 😉. If you’re familiar with Sino-Japanese writing, you know that a character like 場ba (“place/area”) is made up of
+ 土 (“ground”) on the left, then 日 (“sun” or “day”) on the top-right, below which we find 一 (“one”, the number) on top of 勿.
+                    <br>
+                </p>
+                <p class="article-more-link">
+                    <a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/">
+                        Read more
+                    </a>
+                </p>
+            </div>
+            <footer class="article-footer">
+    <a data-url="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" data-id="643f2ca09cd3f31f212167fc3ecf731c" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+        </div>
+    </article>
+    
 
     <nav id="page-nav">
 
@@ -733,6 +862,25 @@ These are are public-domain software libraries intended to be used by quiz or fl
                     <p class="item-title"><a href="https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/" class="title">Announcing: Ebisu and Ebisu.js</a></p>
                     <p class="item-date">
                         <time datetime="2017-04-28 04:48:19 -0400 EDT" itemprop="datePublished">2017 Apr 28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/announcing-kanjibreak/banner.png)" alt="Insight ≠ Numbers" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" class="title">Announcing: KanjiBreak</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-02-21 01:03:22 -0500 EST" itemprop="datePublished">2017 Feb 21</time>
                     </p>
                 </div>
             </li>
