@@ -22,5 +22,29 @@
 These are are public-domain software libraries intended to be used by quiz or flashcard apps for intelligent, Bayesian quiz scheduling. They are released under the completely free Unlicense, and can be used anywhere by anyone without any conditions 🎆. The underlying algorithm is based on a principled application of Bayesian statistics, and has many nice features compared to existing scheduling algorithms 😁.</description>
     </item>
     
+    <item>
+      <title>Announcing: KanjiBreak</title>
+      <link>https://fasiha.github.io/hugo-site/announcing-kanjibreak/</link>
+      <pubDate>Tue, 21 Feb 2017 01:03:22 -0500</pubDate>
+      
+      <guid>https://fasiha.github.io/hugo-site/announcing-kanjibreak/</guid>
+      <description>I am very pleased to announce a web app I’ve been working on: KanjiBreak!
+It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., kanji break-downs 😉. If you’re familiar with Sino-Japanese writing, you know that a character like 場ba (“place/area”) is made up of
+ 土 (“ground”) on the left, then 日 (“sun” or “day”) on the top-right, below which we find 一 (“one”, the number) on top of 勿.</description>
+    </item>
+    
+    <item>
+      <title>Texture-shaded globes</title>
+      <link>https://fasiha.github.io/hugo-site/texture-shaded-globes/</link>
+      <pubDate>Mon, 14 Dec 2015 00:08:00 -0400</pubDate>
+      
+      <guid>https://fasiha.github.io/hugo-site/texture-shaded-globes/</guid>
+      <description>Hey.
+Do me a favor.
+Take a look at six images.
+Japan: 566 km This shows Honshu, the big island of Japan, as well as Shikoku and the Korean and Chinese coastlines, from a vantage point floating east of the Asian continent, 566 kilometers above the surface. (The International Space Station hovers around 405 km.)
+The huge blob of yellow light in the lower-middle is the Tokyo megalopolis. If you follow the nearer coastline left (southwards), you’ll hit the next sprawling blobs of light, the Nagoya metropolis, then the Osaka–Kobe metropolis, on either side of the Nara peninsula.</description>
+    </item>
+    
   </channel>
 </rss>

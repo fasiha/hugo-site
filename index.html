@@ -177,7 +177,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        4
+        5
         <span>Posts</span>
       </div>
       <div class="article-info-block">
@@ -263,6 +263,9 @@
     <article class="article article-type-post" itemscope="" itemprop="blogPost">
         <div class="article-inner">
             
+            <a href="https://fasiha.github.io/hugo-site/japanese-study-books/" itemprop="url">
+                <img src="https://fasiha.github.io/hugo-site/japanese-study-books/loc.jpg" class="article-banner">
+            
             </a>
 
             <header class="article-header">
@@ -278,7 +281,7 @@
             <i class="fa fa-calendar"></i>
             <time datetime="2017-05-21 09:33:34 -0400 EDT" itemprop="datePublished">2017 May 21</time>
             &middot;
-            350
+            363
             words
             &middot;
             2
@@ -701,6 +704,19 @@ These are are public-domain software libraries intended to be used by quiz or fl
         
             
             
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://fasiha.github.io/hugo-site/tags/tech">tech</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://fasiha.github.io/hugo-site/tags/study">study</a>
+                
+                
+            </div>
+            
         
     </div>
 </header>
@@ -720,6 +736,146 @@ It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., 
             </div>
             <footer class="article-footer">
     <a data-url="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" data-id="643f2ca09cd3f31f212167fc3ecf731c" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+        </div>
+    </article>
+    
+    <article class="article article-type-post" itemscope="" itemprop="blogPost">
+        <div class="article-inner">
+            
+            <a href="https://fasiha.github.io/hugo-site/texture-shaded-globes/" itemprop="url">
+                <img src="https://fasiha.github.io/hugo-site/texture-shaded-globes/arches.jpg" class="article-banner">
+            
+            </a>
+
+            <header class="article-header">
+    <a href="https://fasiha.github.io/hugo-site/texture-shaded-globes/">
+    <h1 class="article-title" itemprop="name">
+        Texture-shaded globes
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-12-14 00:08:00 -0400 -0400" itemprop="datePublished">2015 Dec 14</time>
+            &middot;
+            950
+            words
+            &middot;
+            5
+            minute read
+        </div>
+        
+        
+            
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://fasiha.github.io/hugo-site/tags/tech">tech</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>
+                    Hey.
+Do me a favor.
+Take a look at six images.
+Japan: 566 km This shows Honshu, the big island of Japan, as well as Shikoku and the Korean and Chinese coastlines, from a vantage point floating east of the Asian continent, 566 kilometers above the surface. (The International Space Station hovers around 405 km.)
+The huge blob of yellow light in the lower-middle is the Tokyo megalopolis. If you follow the nearer coastline left (southwards), you’ll hit the next sprawling blobs of light, the Nagoya metropolis, then the Osaka–Kobe metropolis, on either side of the Nara peninsula.
+                    <br>
+                </p>
+                <p class="article-more-link">
+                    <a href="https://fasiha.github.io/hugo-site/texture-shaded-globes/">
+                        Read more
+                    </a>
+                </p>
+            </div>
+            <footer class="article-footer">
+    <a data-url="https://fasiha.github.io/hugo-site/texture-shaded-globes/" data-id="994371783660367d954944f786329fad" class="article-share-link">
         <i class="fa fa-share"></i>
         Share
     </a>
@@ -815,7 +971,7 @@ It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., 
                 <div class="item-thumbnail">
                     <a href="https://fasiha.github.io/hugo-site/japanese-study-books/" class="thumbnail">
                     
-                        <span class="thumbnail-image thumbnail-none"></span>
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/japanese-study-books/loc.jpg)" alt="Insight ≠ Numbers" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -885,6 +1041,25 @@ It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., 
                 </div>
             </li>
             
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/texture-shaded-globes/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/texture-shaded-globes/arches.jpg)" alt="Insight ≠ Numbers" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/texture-shaded-globes/" class="title">Texture-shaded globes</a></p>
+                    <p class="item-date">
+                        <time datetime="2015-12-14 00:08:00 -0400 -0400" itemprop="datePublished">2015 Dec 14</time>
+                    </p>
+                </div>
+            </li>
+            
         </ul>
     </div>
 </div>
@@ -919,7 +1094,7 @@ It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., 
                 <a class="category-list-link" href="https://fasiha.github.io/hugo-site/tags/study">
                     study
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -927,7 +1102,7 @@ It’s a tool to help create new databases for kanji/hanzi decomposition, i.e., 
                 <a class="category-list-link" href="https://fasiha.github.io/hugo-site/tags/tech">
                     tech
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">3</span>
             </li>
             
         </ul>
