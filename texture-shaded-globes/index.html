@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Texture-shaded globes &middot; Insight ≠ Numbers</title>
+    <meta name="generator" content="Hugo 0.20.7" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Ahmed Fasih">
+    
+      <meta name="description" content="Texture-shading: you’ve never seen terrain like this before!">
+    
+    
+    <link rel="canonical" href="https://fasiha.github.io/hugo-site/texture-shaded-globes/"/>
+    <link rel="icon" href="https://fasiha.github.io/hugo-site/favicon.ico">
+    <link rel="apple-touch-icon" href="https://fasiha.github.io/hugo-site/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://fasiha.github.io/hugo-site/css/style.css">
+    <link rel="stylesheet" href="https://fasiha.github.io/hugo-site/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fasiha.github.io/hugo-site/css/monokai.css">
+    <link rel="stylesheet" href="https://fasiha.github.io/hugo-site/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Texture-shaded globes" />
+<meta property="og:description" content="Texture-shading: you’ve never seen terrain like this before!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fasiha.github.io/hugo-site/texture-shaded-globes/" />
+
+
+
+<meta property="article:published_time" content="2015-12-14T00:08:00-04:00"/>
+<meta property="article:modified_time" content="2015-12-14T00:08:00-04:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="Texture-shaded globes">
+<meta itemprop="description" content="Texture-shading: you’ve never seen terrain like this before!">
+
+
+<meta itemprop="dateModified" content="2015-12-14T00:08:00-04:00" />
+<meta itemprop="wordCount" content="950">
+
+
+
+<meta itemprop="keywords" content="modernity,study,tech," />
+
+    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content="Texture-shaded globes"/>
+<meta name="twitter:title" content="Texture-shaded globes"/>
+<meta name="twitter:description" content="Texture-shading: you’ve never seen terrain like this before!"/>
+<meta name="twitter:site" content="@gratidue"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://fasiha.github.io/hugo-site" id="logo">
+          
+          <i class="logo" style="background-image: url('https://fasiha.github.io/hugo-site/images/monogram.svg')"></i>
+          
+          <span class="site-title">Insight ≠ Numbers</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://fasiha.github.io/">Home</a>
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://fasiha.github.io/hugo-site/about/">About</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://fasiha.github.io/hugo-site/tags/">(Tags)</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://fasiha.github.io/hugo-site/categories/">(Categories)</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://fasiha.github.io/hugo-site/images/fam-stache.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://fasiha.github.io/hugo-site" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://fasiha.github.io/">Home</a></td>
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://fasiha.github.io/hugo-site/about/">About</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://fasiha.github.io/hugo-site/tags/">(Tags)</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://fasiha.github.io/hugo-site/categories/">(Categories)</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://fasiha.github.io/hugo-site" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   		
+	    <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="https://fasiha.github.io/hugo-site/images/fam-stache.png">
+      <h2 id="name">Ahmed Fasih</h2>
+      <h3 id="title">Code – Math – Food – Family</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Dayton, Ohio, USA</span>
+      
+          <a id="follow" href="https://twitter.com/gratidue">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        5
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          3
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/fasiha" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//stackoverflow.com/users/500207" target="_blank" title="Stack Overflow"><i class="fa fa-stack-overflow"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/gratidue" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="https://fasiha.github.io/hugo-site/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+	    
+
+	    
+<section id="main">
+
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+        <div class="article-inner">
+            
+                <img src="https://fasiha.github.io/hugo-site/texture-shaded-globes/arches.jpg" class="article-banner">
+            
+
+            <header class="article-header">
+    <a href="https://fasiha.github.io/hugo-site/texture-shaded-globes/">
+    <h1 class="article-title" itemprop="name">
+        Texture-shaded globes
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2015-12-14 00:08:00 -0400 -0400" itemprop="datePublished">2015 Dec 14</time>
+            &middot;
+            950
+            words
+            &middot;
+            5
+            minute read
+        </div>
+        
+        
+            
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://fasiha.github.io/hugo-site/tags/tech">tech</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                
+
+<p><em>Hey.</em></p>
+
+<p><strong>Do me a favor.</strong></p>
+
+<p><strong><em>Take a look at six images.</em></strong></p>
+
+<hr />
+
+<h1 id="japan-566-km">Japan: 566 km</h1>
+
+<p><img src="japan-black-marble.jpg" alt="Japan: Mountains and Light. 日本、山と光" /></p>
+
+<p>This shows Honshu, the big island of Japan, as well as Shikoku and the Korean and Chinese coastlines, from a vantage point floating east of the Asian continent, 566 kilometers above the surface. (The International Space Station hovers around 405 km.)</p>
+
+<p>The huge blob of yellow light in the lower-middle is the Tokyo megalopolis. If you follow the nearer coastline left (southwards), you’ll hit the next sprawling blobs of light, the Nagoya metropolis, then the Osaka–Kobe metropolis, on either side of the Nara peninsula.  The yellow blobs are what the Suomi NPP satellite saw at night, i.e., the <a href="https://www.nasa.gov/topics/earth/earthmonth/earthmonth_2013_5.html">NASA Black Marble</a> image.</p>
+
+<p>Superimposed on that image is terrain, in monochrome. The gray and white veins are the backbones of the Japanese mountains. If I pointed it out to you, you’d likely recognize Mount Fuji, a circle of white terrain south of Tokyo’s sea of yellow. You may have heard that Japan is mountainous, and its people live mainly in the coastal plains and valleys. Now you know.</p>
+
+<hr />
+
+<h1 id="dayton-ohio-usa-15-km">Dayton, Ohio, USA: 15 km</h1>
+
+<p><img src="daycin.jpg" alt="The US Air Force Museum, Dayton, Ohio, USA" /></p>
+
+<p>Here’s the city where I live, from a view fifteen kilometers up, nearly the service ceiling of a Cessna Citation business jet. If you know what to look for, you can see a triangle of runways next to the National Museum of the US Air Force in the very center of the image. It’s just below (south) of the Mad River that winds its way southwest from the top of the image, to join Twin Creek and Wolf Creek to create the Great Miami River that flows south out of the bottom-left.</p>
+
+<p>The Museum comfortably sits in the basin of this <a href="https://en.wikipedia.org/wiki/Five_Rivers_MetroParks">Five Rivers Park</a>, nestled between the aptly-named Huber Heights to the north, the unsuspected hills of Beavercreek to the southeast, and a hilly spur of Dayton proper to the west (which includes Woodland Cemetery and Arboretum, where the Wright brothers are buried).</p>
+
+<hr />
+
+<h1 id="the-hudson-835-km">The Hudson: 835 km</h1>
+
+<p><img src="hudson.jpg" alt="835 km. The Hudson River Valley, USA, flanked by Catskills, Adirondacks, and the Green Mountains" /></p>
+
+<p>The third image is from a vantage 835 kilometers above New York. The perhaps subtle formation running up through the middle of this image is the Hudson River Valley, which flows south and empties out into the ocean above Manhattan—which you can just make out at the very bottom. To the upper-left of the Hudson’s valley are the Adirondacks, while to their left is the larger spread of the Catskills. To the valley’s right are the large Green Mountains, and further east, the White Mountains, both centering around the whitest veins, the ridges of the mountain chains. Due west of Manhattan you can probably clearly identify what they mean by <a href="https://en.wikipedia.org/wiki/Ridge-and-Valley_Appalachians">Ridge-and-Valley region</a> of the Appalachians.</p>
+
+<p>You might enjoy identifying all the components in <a href="https://commons.wikimedia.org/wiki/File:NortheastAppalachiansMap.jpg">this schematic</a> on this higher-resolution view of the terrain. Also contrast the prominent drainage pattern of the Catskills—where many rivers end in visible lakes—with the more stony demeanor of the Adirondacks.</p>
+
+<hr />
+
+<h1 id="sichuan-745-km">Sichuan: 745 km</h1>
+
+<p><img src="sichuan.jpg" alt="Sichuan Basin, China" /></p>
+
+<p>Let’s return to the Far East to look at the Sichuan Basin from a vantage point 745 kilometers high.</p>
+
+<p>No color here. No basemap. Just monochrome terrain. The frantic fractal mountains to the left (west) are the start of the Tibetan massif. Lower mountains ring the other directions as well. In the middle though we have a patch of peaceful-seeming flatland.</p>
+
+<p>Sichuan is written 四川 in the original. Four 四 rivers 川. In that flatland, you can see the sinuous line of some of those rivers. The thin lines aren’t the rivers themselves—the biggest of lines are a few kilometers wide. What you see as rivers are actually the river valleys carved out by flip-flopping rivers over the millennia.</p>
+
+<hr />
+
+<h1 id="the-sinai-945-km">The Sinai: 945 km</h1>
+
+<p><img src="sinai.jpg" alt="The Nile, the Sinai, the Transjordan" /></p>
+
+<p>Our fifth example puts the terrain back on top of the NASA Black Marble, of the earth at night, but with colors saturated to bleed through the terrain. The fox face in the middle is the Sinai Peninsula. To its left (west) you see the Nile, both it’s broad valley flanked by terrain and the orange of its nearly ninety millions. The triangle of the Nile Delta has no visible terrain—it’s so flat.</p>
+
+<p>A scar runs along the fox-faced Sinai’s right cheek. In the middle of it, very nearly black, is the Dead Sea, the lowest point on earth. To the left of this cleft are the teeming cities of Israel and occupied Palestine, and to its right those of Jordan. At the bottom-right, you can see the Hejazi mountains, separating the coastal region of Tihamah from the interior of Najd.</p>
+
+<p>The whole area—cradles of civilization, 4’500 year old pyramids (as ancient to the Ancient Romans as the Romans are to us), the Late Bronze Age collapse, the Exodus, down to the Intifadas and Arab Spring and modern upheavals—seeing the stage of this drama in such detail is nearly breathtaking.</p>
+
+<p>There’s this <a href="https://commons.wikimedia.org/wiki/File:Nile_River_Delta_at_Night.JPG">other view</a> of this scene that you might enjoy.</p>
+
+<hr />
+
+<h1 id="above-central-ukraine-looking-west-2155-km">Above central Ukraine, looking west: 2155 km</h1>
+
+<p><img src="europe-from-east.jpg" alt="Above Ukraine, looking west" /></p>
+
+<p>Five times higher than the International Space Station comes this view, imitating the classic 1944 infographic painting, <a href="http://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~266329~5504885:Europe-From-The-East#">“Europe From the East” by Richard Edes Harrison</a>.</p>
+
+<hr />
+
+<p>All these images offer some pretty good resolution and I’m deeply sorry if you visited this page on a slow internet connection. Viewing them at full-zoom will likely make every winding river valley or every cracked mountain spine bigger, by a factor of two, maybe four. Scroll around, see what you can see.</p>
+
+<p>Then. If you’re at a recent computer with a WebGL-enabled browser, click of these links to go to the web app that generated all four of these images.</p>
+
+<ul>
+<li><a href="http://maps.aldebrn.me/Apps/#%7B%22version%22%3A0%2C%22baseLayerPicked%22%3A%7B%22name%22%3A%22The%20Black%20Marble%22%2C%22iconUrl%22%3A%22http%3A%2F%2Fmaps.aldebrn.me%2FBuild%2FCesium%2FWidgets%2FImages%2FImageryProviders%2FblackMarble.png%22%7D%2C%22baseTerrainPicked%22%3A%7B%22name%22%3A%22WGS84%20Ellipsoid%22%7D%2C%22layers%22%3A%5B%7B%22url%22%3A%22%2F%2Fcesiumjs.org%2Fblackmarble%22%2C%22isBaseLayer%22%3Atrue%2C%22alpha%22%3A1%2C%22brightness%22%3A1%2C%22contrast%22%3A1%2C%22hue%22%3A0%2C%22saturation%22%3A1%2C%22gamma%22%3A0.48%7D%2C%7B%22url%22%3A%22http%3A%2F%2Fmaps.aldebrn.me%2Fworld-tex-cgiar-90m%22%2C%22isBaseLayer%22%3Afalse%2C%22alpha%22%3A0.52%2C%22brightness%22%3A1.32%2C%22contrast%22%3A1.4%2C%22hue%22%3A0%2C%22saturation%22%3A1%2C%22gamma%22%3A1%7D%5D%2C%22terrainExaggeration%22%3A1%2C%22destination%22%3A%7B%22x%22%3A-4555669.674111755%2C%22y%22%3A3702876.47327235%2C%22z%22%3A3697615.9732322954%7D%2C%22orientation%22%3A%7B%22heading%22%3A5.681369036822533%2C%22pitch%22%3A-0.8218479123823927%2C%22roll%22%3A0.027079069039927184%7D%7D">Japan</a></li>
+<li><a href="https://fasiha.github.io/daycin/Apps/#%7B%22version%22%3A0%2C%22baseLayerPicked%22%3A%7B%22name%22%3A%22Bing%20Maps%20Aerial%22%2C%22iconUrl%22%3A%22https%3A%2F%2Ffasiha.github.io%2Fdaycin%2FBuild%2FCesium%2FWidgets%2FImages%2FImageryProviders%2FbingAerial.png%22%7D%2C%22baseTerrainPicked%22%3A%7B%22name%22%3A%22WGS84%20Ellipsoid%22%7D%2C%22layers%22%3A%5B%7B%22url%22%3A%22%2F%2Fdev.virtualearth.net%22%2C%22isBaseLayer%22%3Atrue%2C%22alpha%22%3A1%2C%22brightness%22%3A1%2C%22contrast%22%3A1.22%2C%22hue%22%3A0%2C%22saturation%22%3A1%2C%22gamma%22%3A1.08%7D%2C%7B%22url%22%3A%22..%2Ftiles%22%2C%22isBaseLayer%22%3Afalse%2C%22alpha%22%3A0.9%2C%22brightness%22%3A1%2C%22contrast%22%3A1.4%2C%22hue%22%3A0%2C%22saturation%22%3A1%2C%22gamma%22%3A0.68%7D%5D%2C%22terrainExaggeration%22%3A1%2C%22destination%22%3A%7B%22x%22%3A504706.8355537353%2C%22y%22%3A-4893815.209792661%2C%22z%22%3A4069458.683224584%7D%2C%22orientation%22%3A%7B%22heading%22%3A0.0032050530316229953%2C%22pitch%22%3A-1.5707141038036494%2C%22roll%22%3A0%7D%7D">Dayton</a></li>
+<li><a href="http://maps.aldebrn.me/Apps/#%7B%22version%22%3A0%2C%22baseLayerPicked%22%3A%7B%22name%22%3A%22Mapbox%20Streets%22%2C%22iconUrl%22%3A%22http%3A%2F%2Fmaps.aldebrn.me%2FBuild%2FCesium%2FWidgets%2FImages%2FImageryProviders%2FmapboxTerrain.png%22%7D%2C%22baseTerrainPicked%22%3A%7B%22name%22%3A%22WGS84%20Ellipsoid%22%7D%2C%22layers%22%3A%5B%7B%22url%22%3A%22%2F%2Fapi.mapbox.com%2Fv4%2F%22%2C%22isBaseLayer%22%3Atrue%2C%22alpha%22%3A1%2C%22brightness%22%3A1%2C%22contrast%22%3A1%2C%22hue%22%3A0%2C%22saturation%22%3A1%2C%22gamma%22%3A1%7D%2C%7B%22url%22%3A%22http%3A%2F%2Fmaps.aldebrn.me%2Fworld-tex-cgiar-90m%22%2C%22isBaseLayer%22%3Afalse%2C%22alpha%22%3A0.86%2C%22brightness%22%3A1%2C%22contrast%22%3A2.5%2C%22hue%22%3A0%2C%22saturation%22%3A1%2C%22gamma%22%3A1.84%7D%5D%2C%22terrainExaggeration%22%3A1%2C%22destination%22%3A%7B%22x%22%3A1467237.0149951847%2C%22y%22%3A-5040591.413295751%2C%22z%22%3A4932743.9292378975%7D%2C%22orientation%22%3A%7B%22heading%22%3A0.06478440361275162%2C%22pitch%22%3A-1.569780019850889%2C%22roll%22%3A0%7D%7D">The Hudson</a></li>
+<li><a href="http://maps.aldebrn.me/Apps/#%7B%22version%22%3A0%2C%22baseLayerPicked%22%3A%7B%22name%22%3A%22The%20Black%20Marble%22%2C%22iconUrl%22%3A%22http%3A%2F%2Fmaps.aldebrn.me%2FBuild%2FCesium%2FWidgets%2FImages%2FImageryProviders%2FblackMarble.png%22%7D%2C%22baseTerrainPicked%22%3A%7B%22name%22%3A%22WGS84%20Ellipsoid%22%7D%2C%22layers%22%3A%5B%7B%22url%22%3A%22%2F%2Fcesiumjs.org%2Fblackmarble%22%2C%22isBaseLayer%22%3Atrue%2C%22alpha%22%3A1%2C%22brightness%22%3A1%2C%22contrast%22%3A1%2C%22hue%22%3A0%2C%22saturation%22%3A1%2C%22gamma%22%3A1%7D%2C%7B%22url%22%3A%22http%3A%2F%2Fmaps.aldebrn.me%2Fworld-tex-cgiar-90m%22%2C%22isBaseLayer%22%3Afalse%2C%22alpha%22%3A1%2C%22brightness%22%3A1.26%2C%22contrast%22%3A3%2C%22hue%22%3A0%2C%22saturation%22%3A1%2C%22gamma%22%3A1%7D%5D%2C%22terrainExaggeration%22%3A1%2C%22destination%22%3A%7B%22x%22%3A-1680812.5781039044%2C%22y%22%3A5928345.92553644%2C%22z%22%3A3564399.711321817%7D%2C%22orientation%22%3A%7B%22heading%22%3A6.274816124366115%2C%22pitch%22%3A-1.570034204520696%2C%22roll%22%3A0%7D%7D">Sichuan</a></li>
+<li><a href="http://maps.aldebrn.me/Apps/#%7B%22version%22%3A0%2C%22baseLayerPicked%22%3A%7B%22name%22%3A%22The%20Black%20Marble%22%2C%22iconUrl%22%3A%22http%3A%2F%2Fmaps.aldebrn.me%2FBuild%2FCesium%2FWidgets%2FImages%2FImageryProviders%2FblackMarble.png%22%7D%2C%22baseTerrainPicked%22%3A%7B%22name%22%3A%22WGS84%20Ellipsoid%22%7D%2C%22layers%22%3A%5B%7B%22url%22%3A%22%2F%2Fcesiumjs.org%2Fblackmarble%22%2C%22isBaseLayer%22%3Atrue%2C%22alpha%22%3A1%2C%22brightness%22%3A1%2C%22contrast%22%3A1%2C%22hue%22%3A0%2C%22saturation%22%3A3%2C%22gamma%22%3A1%7D%2C%7B%22url%22%3A%22http%3A%2F%2Fmaps.aldebrn.me%2Fworld-tex-cgiar-90m%22%2C%22isBaseLayer%22%3Afalse%2C%22alpha%22%3A0.84%2C%22brightness%22%3A1.22%2C%22contrast%22%3A3%2C%22hue%22%3A0%2C%22saturation%22%3A1%2C%22gamma%22%3A1%7D%5D%2C%22terrainExaggeration%22%3A1%2C%22destination%22%3A%7B%22x%22%3A5290854.567243439%2C%22y%22%3A3560796.5956659717%2C%22z%22%3A3588048.238531111%7D%2C%22orientation%22%3A%7B%22heading%22%3A6.139467117973812%2C%22pitch%22%3A-1.5563300568612175%2C%22roll%22%3A0%7D%7D">Sinai</a></li>
+<li><a href="http://maps.aldebrn.me/Apps/#%7B%22version%22%3A0%2C%22baseLayerPicked%22%3A%7B%22name%22%3A%22Mapbox%20Satellite%22%2C%22iconUrl%22%3A%22http%3A%2F%2Fmaps.aldebrn.me%2FBuild%2FCesium%2FWidgets%2FImages%2FImageryProviders%2FmapboxSatellite.png%22%7D%2C%22baseTerrainPicked%22%3A%7B%22name%22%3A%22WGS84%20Ellipsoid%22%7D%2C%22layers%22%3A%5B%7B%22url%22%3A%22%2F%2Fapi.mapbox.com%2Fv4%2F%22%2C%22isBaseLayer%22%3Atrue%2C%22alpha%22%3A1%2C%22brightness%22%3A1%2C%22contrast%22%3A1%2C%22hue%22%3A0%2C%22saturation%22%3A3%2C%22gamma%22%3A1%7D%2C%7B%22url%22%3A%22http%3A%2F%2Fmaps.aldebrn.me%2Fworld-tex-cgiar-90m%22%2C%22isBaseLayer%22%3Afalse%2C%22alpha%22%3A0.9%2C%22brightness%22%3A1.1%2C%22contrast%22%3A2.18%2C%22hue%22%3A0%2C%22saturation%22%3A1%2C%22gamma%22%3A1%7D%5D%2C%22terrainExaggeration%22%3A1%2C%22destination%22%3A%7B%22x%22%3A4596057.84922899%2C%22y%22%3A2996920.8694578307%2C%22z%22%3A6519928.159490867%7D%2C%22orientation%22%3A%7B%22heading%22%3A4.518257183901266%2C%22pitch%22%3A-1.0325489903556369%2C%22roll%22%3A6.281328392869174%7D%7D">Europe</a></li>
+</ul>
+
+<p>Play with the controls. When you’ve had enough, come back and we’ll explain below.</p>
+
+<h1 id="texture-shading">Texture-shading</h1>
+
+<p>Upcoming.</p>
+
+            </div>
+            <footer class="article-footer">
+    <a data-url="https://fasiha.github.io/hugo-site/texture-shaded-globes/" data-id="994371783660367d954944f786329fad" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+        </div>
+
+        
+<nav id="article-nav">
+    
+
+    
+    <a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">Announcing: KanjiBreak</div>
+    </a>
+    
+</nav>
+
+
+    </article>
+
+    
+</section>
+
+
+	    
+	    <aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/japanese-study-books/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/japanese-study-books/loc.jpg)" alt="Texture-shaded globes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/japanese-study-books/" class="title">Japanese study books</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-21 09:33:34 -0400 EDT" itemprop="datePublished">2017 May 21</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/co-housing/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/images/Wagons-on-trail-R1_3.jpg)" alt="Texture-shaded globes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/co-housing/" class="title">Co-housing</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-06 11:10:51 -0400 EDT" itemprop="datePublished">2017 May 06</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/ebisu/math.jpg)" alt="Texture-shaded globes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/announcing-ebisu-and-ebisu.js/" class="title">Announcing: Ebisu and Ebisu.js</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-04-28 04:48:19 -0400 EDT" itemprop="datePublished">2017 Apr 28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/announcing-kanjibreak/banner.png)" alt="Texture-shaded globes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/announcing-kanjibreak/" class="title">Announcing: KanjiBreak</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-02-21 01:03:22 -0500 EST" itemprop="datePublished">2017 Feb 21</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fasiha.github.io/hugo-site/texture-shaded-globes/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fasiha.github.io/hugo-site/texture-shaded-globes/arches.jpg)" alt="Texture-shaded globes" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="https://fasiha.github.io/hugo-site/texture-shaded-globes/" class="title">Texture-shaded globes</a></p>
+                    <p class="item-date">
+                        <time datetime="2015-12-14 00:08:00 -0400 -0400" itemprop="datePublished">2015 Dec 14</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fasiha.github.io/hugo-site/tags/modernity">
+                    modernity
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fasiha.github.io/hugo-site/tags/study">
+                    study
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fasiha.github.io/hugo-site/tags/tech">
+                    tech
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://fasiha.github.io/hugo-site/tags/modernity" style="font-size: 12px;">modernity</a>
+        
+        
+        <a href="https://fasiha.github.io/hugo-site/tags/study" style="font-size: 12px;">study</a>
+        
+        
+        <a href="https://fasiha.github.io/hugo-site/tags/tech" style="font-size: 12px;">tech</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+	    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017
+      (not really!) Powered by <a href="//gohugo.io">Hugo</a> with the <a href="https://github.com/digitalcraftsman/hugo-icarus-theme">Icarus</a> theme.
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://fasiha.github.io/hugo-site/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://fasiha.github.io/hugo-site/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+</body>
+</html>
