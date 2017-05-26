@@ -2,10 +2,10 @@
 banner = "announcing-kanjibreak/banner.png"
 categories = []
 date = "2017-02-21T01:03:22-05:00"
-description = ""
+description = "KanjiBreak: collaboratively create kanji character breakdowns!"
 images = []
 menu = ""
-tags = []
+tags = ["tech", "study"]
 title = "Announcing: KanjiBreak"
 
 +++

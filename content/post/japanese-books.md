@@ -1,5 +1,5 @@
 +++
-banner = ""
+banner = "japanese-study-books/loc.jpg"
 categories = []
 date = "2017-05-21T09:33:34-04:00"
 description = ""
@@ -60,3 +60,7 @@ The second half of the book contains a few dozen idiomatic phrases that “are n
 - 〜たばかりに……〜てしまった or 〜たばかりに……〜ざるを<ruby>得<rt>え</rt></ruby>なくなった, etc.
 
 Super-cool stuff. The best way to learn these of course is to find examples in native text that you are familiar with, and I hope to build resources like that (and meta-resources, to help build those resources) in the near future.
+
+---
+
+(Photo credit: banner: US Library of Congress Jefferson Building, [Architect of the Capitol](https://www.flickr.com/photos/uscapitol/6918671064/).)

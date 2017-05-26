@@ -4,6 +4,7 @@ draft = false
 title = "Co-housing"
 tags = [ "modernity" ]
 banner = "images/Wagons-on-trail-R1_3.jpg"
+description = "Some notes on co-housing."
 
 +++
 

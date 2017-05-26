@@ -2,7 +2,7 @@
 banner = "ebisu/math.jpg"
 categories = []
 date = "2017-04-28T04:48:19-04:00"
-description = ""
+description = "Ebisu: intelligent quiz scheduling!"
 images = []
 menu = ""
 tags = ["tech"]
